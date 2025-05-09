@@ -1,0 +1,24 @@
+{
+  "name": "node-cloud-vision-api",
+  "version": "0.2.0",
+  "description": "Node client for Google Cloud Vision API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejitak/node-cloud-vision-api.git"
+  },
+  "author": "tejitak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tejitak/node-cloud-vision-api/issues"
+  },
+  "homepage": "https://github.com/tejitak/node-cloud-vision-api#readme",
+  "dependencies": {
+    "googleapis": "^2.1.7",
+    "request": "^2.67.0",
+    "underscore": "^1.8.3"
+  }
+}
