@@ -1,0 +1,36 @@
+= Digital Classroom - Developer Notes
+
+== Create a Release
+
+- Linux: `bash ./scripts/relase.sh v1.0.0` (Change 1.0.0 to correct version)
+- Windows: `scripts\relase.bat v1.0.0` (Change 1.0.0 to correct version)
+
+== TODO
+- Decide WebSocket implementation
+- Implement broadcast communication from server to all clients.
+
+== Open Questions
+- Use BBB or classroom vocabular?
+- Why is the JWT not sent back by the browser?
+
+== Answered Questions
+- How to configure Spring Security WebFilter for specific path?
+    -> matcher within the filter
+- A user is bound to a classroom instance. Should a central user service exist, or should users always be taken from within a data structure in a classroom instance. -> No. Users will be bound hardly to a classroom instance.
+== Notes
+
+Useful BBB API testing tool: https://mconf.github.io/api-mate/
+
+JWT: https://github.com/raphaelDL/spring-webflux-security-jwt
+
+Used Library: https://connect2id.com/products/nimbus-jose-jwt
+
+RSocket: https://github.com/rsocket/rsocket
+
+RSocket.js: https://github.com/rsocket/rsocket-js
+
+RSocket Spring: https://docs.spring.io/spring-framework/docs/current/reference/pdf/rsocket.pdf
+
+Micrometer: https://www.baeldung.com/micrometer
+
+Flowable -> RxJS: https://github.com/netifi/netifi-js-client/blob/3ec310824f643d61a8a6386458ff95524f3373a8/src/rx/FlowableAdapter.js#L35-L47
