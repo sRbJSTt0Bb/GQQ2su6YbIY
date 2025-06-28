@@ -1,0 +1,25 @@
+CommitMsg:
+  TextWidth:
+    enabled: false
+
+PreCommit:
+  CaseConflicts:
+    enabled: false
+  FileSize:
+    enabled: true
+    size_limit_bytes: 1048576
+    exclude:
+      - ".yarn/releases/yarn-*.cjs"
+  RuboCop:
+    enabled: true
+    on_warn: fail
+  Stylelint:
+    enabled: true
+    command: ["yarn", "run", "--silent", "stylelint"]
+    required_executable: "./node_modules/stylelint/bin/stylelint.js"
+  TrailingWhitespace:
+    enabled: true
+    exclude:
+      - "**/*.svg"
+      - "app/frontend/**/*.bs.js"
+      - "**/*.md"
